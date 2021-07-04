@@ -1,8 +1,9 @@
 ---
 title: Farmdrop
-description: Farm to table online groceries
-img: x
+description: "Farmdrop: Farm to table online groceries"
+img: farmdrop.png
 alt: x
+importance: 100
 ---
 
 *Summary*

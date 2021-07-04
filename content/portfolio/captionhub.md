@@ -1,8 +1,9 @@
 ---
-title: Captionhub
-description: An enterprise captioning solution
-img: x
+title: CaptionHub
+description: "CaptionHub: An enterprise captioning solution"
+img: captionhub.svg
 alt: x
+importance: 500
 ---
 
 # CaptionHub
