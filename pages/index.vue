@@ -7,9 +7,13 @@
           src="https://picsum.photos/800/600?grayscale"
         />
       </div>
-      <div class="md:col-span-1 w-full text-left flex flex-col">
+      <div class="md:col-span-1 w-full text-left flex flex-col px-2">
         <div class="flex-grow">
-          <h1 class="text-5xl font-semibold">Hej, I'm Erik</h1>
+          <h1
+            class="text-3xl lg:text-5xl font-semibold select-none pt-4 md:pt-0"
+          >
+            Hej, I'm Erik
+          </h1>
           <p class="text-2xl pt-4">
             I build (web)apps, with a focus on
             <span class="color-loop-1">modern web technologies</span>,
@@ -25,7 +29,13 @@
       </div>
     </div>
     <div class="w-full flex flex-col flex-grow">
-      <div><h3 class="text-2xl select-none pb-4 pt-4">SELECTED WORK</h3></div>
+      <div>
+        <h3
+          class="text-2xl select-none pb-4 pt-4 border-t border-black md:border-0"
+        >
+          SELECTED WORK
+        </h3>
+      </div>
       <div
         v-for="(articles, index) in articleRows"
         :key="index"
