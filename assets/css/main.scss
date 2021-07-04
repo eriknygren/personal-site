@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.article {
+  max-width: 60rem;
+  text-align: left;
+}

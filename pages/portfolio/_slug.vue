@@ -1,10 +1,14 @@
 <template>
   <div class="container">
-    <div>
-      <article>
-        <nuxt-content :document="article" />
-      </article>
-    </div>
+    <article class="article">
+      <div>
+        <NuxtLink to="/">&lt;&lt; Back</NuxtLink>
+      </div>
+      <nuxt-content
+        class="prose sm:prose lg:prose-lg xl:prose-2xl"
+        :document="article"
+      />
+    </article>
   </div>
 </template>
 <script>
@@ -16,13 +20,3 @@ export default {
   },
 }
 </script>
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-</style>
