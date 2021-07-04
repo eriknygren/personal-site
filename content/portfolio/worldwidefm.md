@@ -9,13 +9,13 @@ importance: 400
 
 # WWFM
 
-*Summary*
+### Summary
 
-Back end: CraftCMS/PHP
+**Back end:** CraftCMS/PHP
 
-Front end: Nuxt.JS/Vue
+**Front end:** Nuxt.JS/Vue
 
-Core challenge: dynamic content & UX
+**Core challenge:** Dynamic content & UX
 
 A really fun project I was very excited to be involved with, in their own words
 WorldwideFM is:  'An award winning radio station with a global audience’. I was
@@ -32,7 +32,7 @@ account. Last but not least, we need to have an effortless way to navigate
 around the web app, without interrupting audio. Below I’ll separate out these
 three problems and how we tackled them.
 
-*Content management*
+### Content management
 
 Picking a CMS should mostly be about something that’s a joy to work with. The
 most important thing to remember is when a dev teams moves on, someone else’s
@@ -46,7 +46,7 @@ https://craftcms.com/features/all#matrix matrix field systems in craft. It
 gives us a nice way of creating highly flexible content, that we can easily
 identify in a front end and style nicely, no matter the structure of the post.
 
-*Effortless navigation without interrupting audio*
+### Effortless navigation without interrupting audio
 
 Modern SPA solutions are at their core for partially loading sites after the
 initial pageload, meaning we only swap out the part of the site we need to.
@@ -61,7 +61,7 @@ To fetch content from our CMS we use GraphQL, which works great in a scenario
 where the content is not coming from a custom API, but from a CMS, as it gives
 us a nice way of only fetching the content we need.
 
-*SEO*
+### SEO
 
 One of the main problems with javascript rendered applications have
 traditionally been a lack of indexing content with search engines, as its
@@ -72,7 +72,7 @@ responsibility from there. By doing this we can correctly set meta data, and
 search crawlers will see a fully rendered page, making the site receptible for
 organic search traffic.
 
-*Summary*
+### Conclusion
 
 With this approach we were able to deliver a site that is effortless both to
 maintain and visit. Which does not get in the way of letting the content shine.

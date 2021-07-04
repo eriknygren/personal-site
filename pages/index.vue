@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex flex-col">
+  <div class="container min-h-screen flex flex-col">
     <div class="flex-grow grid grid-cols-1 md:grid-cols-3 md:pt-4">
       <div class="md:col-span-2 w-full">
         <img

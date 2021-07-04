@@ -1,8 +1,8 @@
 @import '~/assets/css/text-animation.scss';
+@import '~/assets/css/article.scss';
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 .splash-img {
   @media (min-width: 640px) {
     border-radius: 2rem;
-    max-height: 80vh;
+    max-height: 65vh;
   }
 }
 

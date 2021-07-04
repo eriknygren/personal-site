@@ -28,11 +28,25 @@ anything to do with subtitles.
     allowFullscreen
     frameborder="0"
     scrolling="no"
-    class="wistia_embed mx-auto"
+    class="wistia_embed mx-auto hidden md:block"
     name="wistia_embed"
     src="https://fast.wistia.net/embed/iframe/57crmj04yq"
-    width="500"
-    height="280">
+    width="600"
+    height="336">
+  </iframe>
+
+  <!-- sm screen embed version -->
+  <iframe
+    allowtransparency="true"
+    title="Wistia video player"
+    allowFullscreen
+    frameborder="0"
+    scrolling="no"
+    class="wistia_embed mx-auto md:hidden"
+    name="wistia_embed"
+    src="https://fast.wistia.net/embed/iframe/57crmj04yq"
+    width="400"
+    height="224">
   </iframe>
 </div>
 

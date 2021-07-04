@@ -6,19 +6,19 @@ alt: x
 importance: 100
 ---
 
-*Summary*
+### Summary
 
-Back end: Rails
+**Back end:** Rails
 
-Front end: React
+**Front end:** React
 
-Core challenge: eCommerce and
+**Core challenge:** eCommerce and
 logistics
 
 Farmdrop is an online grocer with a focus on food sourced from local farmers,
 fishermen and other producers.
 
-*Experiencing startup growth*
+### Experiencing startup growth
 
 While working there, I developed and maintained
 the full stack of our food marketplace platform, powered by Rails and
@@ -28,7 +28,7 @@ business, it’s a versatile environment, where I dealt with a great range of
 tasks including payment processing, adaptive UIs, business automation,
 recruitment, scaling, product roadmap planning etc. 
 
-*From Angular 1.3 to Webpack + React*
+### From Angular 1.3 to Webpack + React
 
 About a year into my time at Farmdrop is
 when frameworks using the virtual DOM really took off (React in particular). We
@@ -38,7 +38,7 @@ delivery from collection points to door to door. However, it served as a nice
 point to jump off Angular and enter the world of store + shadow DOM based
 architecture that is still industry standard for most complex web apps today.
 
-*What’s the biggest challenge with online groceries?*
+### What’s the biggest challenge with online groceries?
 
 The most critical
 business problem for an online grocer surround logistics and stock management.
@@ -54,7 +54,7 @@ value store with delivery dates and quantities available, that was added to the
 elastic search index to scope the store to a delivery date in a performant
 manner.
 
-*Summary*
+### Conclusion
 
 I spent 3 years with Farmdrop. It was a great place to learn. I
 believe early stage companies are great for junior developers as it forces you
