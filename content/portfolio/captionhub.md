@@ -18,7 +18,7 @@ importance: 500
 
 ### What does it do
 
-CaptionHub is a lot of things, but in essence: It’s an enterprise tool for
+CaptionHub is a lot of things, but in short: It’s an enterprise tool for
 anything to do with subtitles.
 
 <div>
@@ -67,22 +67,22 @@ of captions for a video increased. Problems that could be solved using
 virtualisation and virtual DOM.
 
 I overhauled the UI using VueJS as the new base framework. This was a task that
-required a lot of pragmatism, partial deliveries of improvements was the only
-solution that met business requirements rather than starting over.  I focused
+required a lot of pragmatism. Partial deliveries of improvements was the only
+solution that met business requirements, rather than a full rebuild.  I focused
 on the most critical issues and moved over sections gradually as the old
 Rails/jQuery UI could no longer deal with the complexity of customisable
-workflow (without some serious spaghetti code!).
+workflows.
 
 This turned out to be a good approach, iteration after iteration we could
-rebrand the site, refresh the UX, solve critical performance issues and support
+rebrand the site, refresh the UX, solve critical performance issues and deliver
 different tiers of feature support.
 
 ### Current state
 
 A couple of years later and there’s not much legacy code left, and it’s a
 modern performant app. It was always an excellent core product, but in the
-world of modern enterprise SaaS software there’s a lot more to it. In terms of
+world of modern enterprise SaaS software there’s a lot more to it:
 platform integrations, self hosting, feature tiers, scaling etc. CaptionHub is
-a product that can be shaped to meet all those demands: And that starts with
+a product that can be shaped to meet all these demands. And that starts with
 building applications that at their architectural core can deal with
 modularity, across the whole stack.
