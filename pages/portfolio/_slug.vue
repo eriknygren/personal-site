@@ -73,5 +73,34 @@ export default {
       ),
     }
   },
+  head() {
+    const title = `Portfolio: ${this.article.title}`
+    const description = `Erik's portfolio, working on ${this.article.description}`
+    return {
+      title,
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: title,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: description,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: description,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `${this.$config.baseURL}/logos/${this.article.img}`,
+        },
+      ],
+    }
+  },
 }
 </script>
