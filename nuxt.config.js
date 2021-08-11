@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -11,7 +13,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio site for Erik Nygren, a web developer based in London, UK' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Portfolio site for Erik Nygren, a web developer based in London, UK',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -39,7 +46,15 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    routes() {
+      return getRoutes()
+    },
+  },
 
   publicRuntimeConfig: {
     baseURL: process.env.BASE_URL || 'localhost:3000',
