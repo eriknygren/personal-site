@@ -23,6 +23,19 @@
           </p>
         </div>
         <div class="md:text-right pt-4 pb-4 md:pt-0 md:pb-0">
+          <div class="text-right pb-1">
+            <a
+              href="https://github.com/eriknygren"
+              target="_blank"
+              title="Github profile"
+            >
+              <img
+                class="inline"
+                src="/external/GitHub-Mark-32px.png"
+                alt="Github"
+              />
+            </a>
+          </div>
           <span class="select-none font-semibold">contact: </span
           ><code>hello@eriknygren.dev</code>
         </div>
