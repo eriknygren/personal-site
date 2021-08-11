@@ -8,15 +8,28 @@ importance: 100
 
 ### Summary
 
-**Back end:** Rails
-
-**Front end:** React
-
-**Core challenge:** eCommerce and
-logistics
+<div class="grid grid-cols-3">
+  <div class="font-bold">When:</div>
+  <div class="col-span-2">2014-2017</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Back end:</div>
+  <div class="col-span-2">Rails</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Front end:</div>
+  <div class="col-span-2">React</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Core challenge:</div>
+  <div class="col-span-2">eCommerce and logistics</div>
+</div>
 
 Farmdrop is an online grocer with a focus on food sourced from local farmers,
 fishermen and other producers.
+
+
+![Farmdrop](/screenshots/farmdrop.webp)
 
 ### Experiencing startup growth
 

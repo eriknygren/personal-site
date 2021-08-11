@@ -10,13 +10,22 @@ importance: 500
 
 ### Summary
 
-**Back end:** Rails
-
-**Front end:** Vue.js and various HTML5 media + canvas APIs
-
-**Core challenge:** Real time browser render performance and feature modularity
-
-### What does it do
+<div class="grid grid-cols-3">
+  <div class="font-bold">When:</div>
+  <div class="col-span-2">2017-present</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Back end:</div>
+  <div class="col-span-2">Rails</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Front end:</div>
+  <div class="col-span-2">Vue.js and various HTML5 media + canvas APIs</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Core challenge:</div>
+  <div class="col-span-2">Real time browser render performance and feature modularity</div>
+</div>
 
 CaptionHub is a lot of things, but in short: It’s an enterprise tool for
 anything to do with subtitles.
@@ -65,6 +74,9 @@ Second, scaling issues with the video editor: It was a backbone JS app that
 worked well, but it struggled to scale as the length of videos and the amount
 of captions for a video increased. Problems that could be solved using
 virtualisation and virtual DOM.
+
+<img style="margin-bottom: 0;" src="/screenshots/captionhub.webp" alt="Screenshot of CaptionHub's editor" />
+<span class="text-sm italic">The CaptionHub caption editor</span>
 
 I overhauled the UI using VueJS as the new base framework. This was a task that
 required a lot of pragmatism. Partial deliveries of improvements was the only

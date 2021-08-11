@@ -11,17 +11,32 @@ importance: 400
 
 ### Summary
 
-**Back end:** CraftCMS/PHP
-
-**Front end:** Nuxt.JS/Vue
-
-**Core challenge:** Dynamic content & UX
+<div class="grid grid-cols-3">
+  <div class="font-bold">When:</div>
+  <div class="col-span-2">2021</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Back end:</div>
+  <div class="col-span-2">CraftCMS/PHP</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Front end:</div>
+  <div class="col-span-2">Nuxt.JS/Vue</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="font-bold">Core challenge:</div>
+  <div class="col-span-2">Dynamic content & UX</div>
+</div>
 
 A really fun project I was very excited to be involved with, in their own words
-WorldwideFM is:  'An award winning radio station with a global audience’. I was
-involved in this project in a development lead/architectural role, choosing
+WorldwideFM is:  'An award winning radio station with a global audience’.
+
+I was involved in this project in a development lead/architectural role, choosing
 frameworks and making technical decisions based on a set list of requirements
 brought forward by the client.
+
+<img style="margin-bottom: 0;" src="/screenshots/wwfm.webp" alt="Screenshot of WWFM splash page" />
+<span class="text-sm italic">The WorldwideFM landing page</span>
 
 Internet radio is an interesting one, serving the actual audio stream is
 trivial with modern web APIs. The challenge is everything around it,  giving
@@ -45,6 +60,9 @@ give something truly flexible to the client, we were keen on the
 https://craftcms.com/features/all#matrix matrix field systems in craft. It
 gives us a nice way of creating highly flexible content, that we can easily
 identify in a front end and style nicely, no matter the structure of the post.
+
+<img class="mx-auto" style="margin-bottom: 0;" src="/screenshots/wwfm_mobile.webp" alt="Screenshot of WWFM show/episode page" />
+<span class="block text-center text-sm italic">Listening back to a show on mobile</span>
 
 ### Effortless navigation without interrupting audio
 
