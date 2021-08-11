@@ -36,8 +36,8 @@
               />
             </a>
           </div>
-          <span class="select-none font-semibold">contact: </span
-          ><code>hello@eriknygren.dev</code>
+          <span class="select-none font-semibold">contact: </span>
+          <code>hello@eriknygren.dev</code>
         </div>
       </div>
     </div>
