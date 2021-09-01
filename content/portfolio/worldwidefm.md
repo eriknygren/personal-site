@@ -28,18 +28,20 @@ importance: 400
   <div class="col-span-2">Dynamic content & UX</div>
 </div>
 
-A really fun project I was very excited to be involved with, in their own words
-WorldwideFM is:  'An award winning radio station with a global audience’.
+A really fun project I was very excited to be involved with. In their own words
+WorldwideFM is: 'An award winning radio station with a global audience’. It's internet
+radio, and it's really good, you should check it out.
 
 I was involved in this project in a development lead/architectural role, choosing
-frameworks and making technical decisions based on a set list of requirements
-brought forward by the client.
+frameworks and making technical decisions based on a spec brought forward by the client.
+In summary the time had come for them to upgrade their website, to support more features
+and enable the launch of a premium subscriber model.
 
 <img style="margin-bottom: 0;" src="/screenshots/wwfm.webp" alt="Screenshot of WWFM splash page" />
 <span class="text-sm italic">The WorldwideFM landing page</span>
 
 Internet radio is an interesting one, serving the actual audio stream is
-trivial with modern web APIs. The challenge is everything around it,  giving
+trivial with modern web APIs. The challenge is everything around it, giving
 the content editors an app that is fun and easy to work with, while also
 letting them serve interesting and varied content year on year. In such a
 content driven industry, there are also a heavy emphasis on taking SEO into
@@ -54,11 +56,11 @@ most important thing to remember is when a dev teams moves on, someone else’s
 job start, spending a significant part of their day creating content in the
 CMS.
 
-For this project we picked Craft CMS.  It did all the things we needed it to
-do, and with a very good editing experience. As one of our mains concerns is to
-give something truly flexible to the client, we were keen on the
-https://craftcms.com/features/all#matrix matrix field systems in craft. It
-gives us a nice way of creating highly flexible content, that we can easily
+For this project we picked Craft CMS. It did all the things we needed it to
+do, paid subscription support and a very good editing experience.
+As one of our mains priorities was to give something truly flexible to the client,
+we were keen on the https://craftcms.com/features/all#matrix matrix field systems in craft.
+It gives us a nice way of creating highly flexible content, that we can easily
 identify in a front end and style nicely, no matter the structure of the post.
 
 <img class="mx-auto" style="margin-bottom: 0;" src="/screenshots/wwfm_mobile.webp" alt="Screenshot of WWFM show/episode page" />
