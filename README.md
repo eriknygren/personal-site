@@ -1,5 +1,7 @@
 # erik-personal-site
 
+[personal site](https://eriknygren.dev)
+
 ## Build Setup
 
 ```bash
