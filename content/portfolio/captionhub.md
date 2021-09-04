@@ -27,7 +27,7 @@ importance: 500
   <div class="col-span-2">Real time browser render performance and feature modularity</div>
 </div>
 
-CaptionHub is a lot of things, but in short: It’s an enterprise tool for
+<a href="https://captionhub.com" target="_blank">CaptionHub</a> is a lot of things, but in short: It’s an enterprise tool for
 anything to do with subtitles.
 
 <div>

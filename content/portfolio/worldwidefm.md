@@ -29,7 +29,8 @@ importance: 400
 </div>
 
 A really fun project I was very excited to be involved with. In their own words
-WorldwideFM is: 'An award winning radio station with a global audience’. It's internet
+<a href="https://worldwidefm.net" target="_blank">WorldwideFM</a> is:
+'An award winning radio station with a global audience’. It's internet
 radio, and it's really good, you should check it out.
 
 I was involved in this project in a development lead/architectural role, choosing
