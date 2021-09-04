@@ -75,7 +75,7 @@ worked well, but it struggled to scale as the length of videos and the amount
 of captions for a video increased. Problems that could be solved using
 virtualisation and virtual DOM.
 
-<img style="margin-bottom: 0;" src="screenshots/captionhub.webp" alt="Screenshot of CaptionHub's editor" />
+<img style="margin-bottom: 0;" src="/screenshots/captionhub.webp" alt="Screenshot of CaptionHub's editor" />
 <span class="text-sm italic">The CaptionHub caption editor</span>
 
 I overhauled the UI using VueJS as the new base framework. This was a task that
