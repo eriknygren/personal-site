@@ -29,7 +29,7 @@ Farmdrop is an online grocer with a focus on food sourced from local farmers,
 fishermen and other producers.
 
 
-![Farmdrop](/screenshots/farmdrop.webp)
+![Farmdrop](screenshots/farmdrop.webp)
 
 ### Experiencing startup growth
 

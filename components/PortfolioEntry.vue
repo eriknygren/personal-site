@@ -6,7 +6,7 @@
     >
       <div>
         <div class="portfolio-image-wrapper">
-          <img class="img" :src="`/logos/${props.article.img}`" />
+          <img class="img" :src="`logos/${props.article.img}`" />
         </div>
         <p class="portfolio-label">{{ props.article.description }}</p>
       </div>

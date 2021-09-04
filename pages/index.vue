@@ -26,7 +26,7 @@
             >
               <img
                 class="inline"
-                src="/external/GitHub-Mark-32px.png"
+                src="external/GitHub-Mark-32px.png"
                 alt="Github"
               />
             </a>

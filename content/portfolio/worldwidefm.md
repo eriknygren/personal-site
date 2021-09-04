@@ -37,7 +37,7 @@ frameworks and making technical decisions based on a spec brought forward by the
 In summary the time had come for them to upgrade their website, to support more features
 and enable the launch of a premium subscriber model.
 
-<img style="margin-bottom: 0;" src="/screenshots/wwfm.webp" alt="Screenshot of WWFM splash page" />
+<img style="margin-bottom: 0;" src="screenshots/wwfm.webp" alt="Screenshot of WWFM splash page" />
 <span class="text-sm italic">The WorldwideFM landing page</span>
 
 Internet radio is an interesting one, serving the actual audio stream is
@@ -63,7 +63,7 @@ we were keen on the https://craftcms.com/features/all#matrix matrix field system
 It gives us a nice way of creating highly flexible content, that we can easily
 identify in a front end and style nicely, no matter the structure of the post.
 
-<img class="mx-auto" style="margin-bottom: 0;" src="/screenshots/wwfm_mobile.webp" alt="Screenshot of WWFM show/episode page" />
+<img class="mx-auto" style="margin-bottom: 0;" src="screenshots/wwfm_mobile.webp" alt="Screenshot of WWFM show/episode page" />
 <span class="block text-center text-sm italic">Listening back to a show on mobile</span>
 
 ### Effortless navigation without interrupting audio
