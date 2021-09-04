@@ -3,6 +3,9 @@ import getRoutes from './utils/getRoutes'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/personal-site/',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Erik Nygren: software developer - portfolio site',
