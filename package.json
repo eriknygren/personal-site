@@ -11,7 +11,7 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "postinstall": "npm rebuild node-sass",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "yarn generate && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
