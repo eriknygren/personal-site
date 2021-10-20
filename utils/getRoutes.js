@@ -5,5 +5,5 @@ export default async () => {
     .sortBy('importance', 'desc')
     .fetch()
 
-  return articles.map((file) => `/portfolio/${file.slug}`)
+  return articles.map((file) => `/portfolio/${file.slug}/`)
 }
