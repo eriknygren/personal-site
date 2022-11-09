@@ -44,12 +44,21 @@
   }
 }
 
-.splash-img {
-}
-
 .article {
   max-width: 60rem;
   text-align: left;
+}
+
+.article-nav {
+  height: 100vh;
+  width: 18rem;
+  position: fixed;
+  top: 0;
+  left:0;
+  display: none;
+  @media (min-width: 1020px) {
+    display: block;
+  }
 }
 
 .flicker-slow {
@@ -58,6 +67,7 @@
 }
 
 .spin-it {
+  display: inline-block;
   animation: spin 4s linear infinite;
   animation-direction: reverse;
   margin: 0 auto;

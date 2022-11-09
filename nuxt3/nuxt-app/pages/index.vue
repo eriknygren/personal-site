@@ -7,11 +7,8 @@
             Hej, I'm Erik
           </h1>
           <p class="text-xl pt-1">
-            I build (web)apps, with a focus on
-            <span class="color-loop-1">modern web technologies</span>,
-            <span class="color-loop-2">interactivity</span>,
-            <span class="color-loop-3">media</span> and
-            <span class="color-loop-4">real time performance</span>.
+            I build (web)apps, with a focus on modern web technologies,
+            interactivity, media and real time performance.
           </p>
         </div>
       </div>

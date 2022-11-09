@@ -2,4 +2,7 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   css: ['@/assets/css/main.css'],
+  content: {
+    documentDriven: true,
+  },
 })
