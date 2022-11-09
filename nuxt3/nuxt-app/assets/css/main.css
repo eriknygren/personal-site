@@ -11,6 +11,12 @@
   flex-direction: column;
 }
 
+.content-article {
+  h1, a {
+    text-decoration: none;
+  }
+}
+
 .portfolio-image-wrapper {
   height: 10rem;
   width: 100%;
@@ -29,7 +35,13 @@
   text-decoration: none;
 }
 
-.portfolio-card {
+.portfolio-card:hover {
+  .portfolio-image-wrapper > .img {
+    max-width: 75%;
+  }
+  .portfolio-label {
+    text-decoration: underline;
+  }
 }
 
 .splash-img {
@@ -38,4 +50,30 @@
 .article {
   max-width: 60rem;
   text-align: left;
+}
+
+.flicker-slow {
+  animation: flicker 5s linear infinite;
+  /* text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA; */
+}
+
+.spin-it {
+  animation: spin 4s linear infinite;
+  animation-direction: reverse;
+  margin: 0 auto;
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70% {
+    opacity: .99;
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
 }
