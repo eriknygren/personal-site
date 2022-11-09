@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.portfolio-image-wrapper {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img {
+    align-self: center;
+    max-width: 70%;
+    height: auto;
+    transition: max-width .2s ease-out .2s, height .2s ease-out .2s;
+  }
+}
+
+.portfolio-label {
+  text-decoration: none;
+}
+
+.portfolio-card {
+}
+
+.splash-img {
+}
+
+.article {
+  max-width: 60rem;
+  text-align: left;
+}
