@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.2.1",
+    "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.0.0-rc.13",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-unicorn": "^44.0.2"
+  }
+}
