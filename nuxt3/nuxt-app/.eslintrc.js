@@ -14,5 +14,7 @@ module.exports = {
   globals: {
     queryContent: 'readonly',
   },
-  rules: {},
+  rules: {
+    'vue/script-setup-uses-vars': 1,
+  },
 }

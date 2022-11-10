@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #ffc0cb;
+}
+
 .container {
   margin: 0 auto;
   display: flex;
@@ -28,6 +32,7 @@
     max-width: 70%;
     height: auto;
     transition: max-width .2s ease-out .2s, height .2s ease-out .2s;
+    filter: grayscale(100%);
   }
 }
 
@@ -66,11 +71,40 @@
   /* text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA; */
 }
 
-.spin-it {
+.main-logo-fx {
+  user-select: none;
+  cursor: pointer;
   display: inline-block;
   animation: spin 4s linear infinite;
   animation-direction: reverse;
   margin: 0 auto;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.main-logo-fx:active {
+  opacity: 0;
+  transition: none;
+}
+
+.sine {
+  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96)
+}
+.forward {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-duration: 8s;
+}
+
+.rewind {
+  animation-direction: normal;
+}
+
+.quick {
+ animation-duration: 1s;
+}
+
+.shadow {
+  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA;
 }
 
 @keyframes flicker {

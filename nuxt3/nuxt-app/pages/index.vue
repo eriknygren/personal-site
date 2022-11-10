@@ -14,7 +14,11 @@
       </div>
       <div class="md:col-span-1"></div>
       <div class="md:col-span-3 flex-grow text-center">
-        <div class="spin-it">
+        <div
+          class="main-logo-fx"
+          :class="[extraEffect]"
+          @click="addRandomEffect"
+        >
           <pre class="text-xl flicker-slow">
               {{ letters[currentLetterIndex] }}
           </pre>
@@ -57,64 +61,25 @@
   </div>
 </template>
 <script setup>
+import { letters } from '@/constants/ascii_art'
+
 const portfolio = ref(
   await queryContent('portfolio').sort({ importance: -1 }).find()
 )
 
-const e1 = String.raw`
-      ___     
-     /\  \    
-    /::\  \   
-   /:/\:\  \  
-  /::\~\:\  \ 
- /:/\:\ \:\__\
- \:\~\:\ \/__/
-  \:\ \:\__\  
-   \:\ \/__/  
-    \:\__\    
-     \/__/    
-`
-const e2 = String.raw`
-      ___     
-     /\__\    
-    /:/ _/_   
-   /:/ /\__\  
-  /:/ /:/ _/_ 
- /:/_/:/ /\__\
- \:\/:/ /:/  /
-  \::/_/:/  / 
-   \:\/:/  /  
-    \::/  /   
-     \/__/    
-`
-const e3 = String.raw`
-      ___     
-     /  /\    
-    /  /:/_   
-   /  /:/ /\  
-  /  /:/ /:/_ 
- /__/:/ /:/ /\
- \  \:\/:/ /:/
-  \  \::/ /:/ 
-   \  \:\/:/  
-    \  \::/   
-     \__\/    
-`
-const e4 = String.raw`
-      ___     
-     /  /\    
-    /  /::\   
-   /  /:/\:\  
-  /  /::\ \:\ 
- /__/:/\:\ \:\
- \  \:\ \:\_\/
-  \  \:\ \:\  
-   \  \:\_\/  
-    \  \:\    
-     \__\/    
-`
+const extraEffects = ['sine', 'forward', 'quick', 'rewind', '']
 
-const letters = [e1, e2, e3, e4]
+const addRandomEffect = () => {
+  let newFx = extraEffect.value
+  while (newFx === extraEffect.value) {
+    // sample a new fx, but not the existing one ^
+    newFx = extraEffects[Math.floor(Math.random() * extraEffects.length)]
+  }
+  extraEffect.value = newFx
+}
+
+const extraEffect = ref('')
+
 const currentLetterIndex = ref(0)
 setInterval(() => {
   if (currentLetterIndex.value === letters.length - 1) {
