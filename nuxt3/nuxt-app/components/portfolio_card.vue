@@ -3,7 +3,11 @@
     <NuxtLink :to="article._path" :title="article.description">
       <div>
         <div class="portfolio-image-wrapper">
-          <img class="img" :src="`/logos/${article.img}`" />
+          <img
+            class="img"
+            :class="{ 'img-grayscale': grayscale }"
+            :src="`/logos/${article.img}`"
+          />
         </div>
         <p class="portfolio-label">{{ article.description }}</p>
       </div>
@@ -13,5 +17,6 @@
 <script setup lang="ts">
 defineProps({
   article: { type: Object, required: true },
+  grayscale: { type: Boolean, default: false },
 })
 </script>

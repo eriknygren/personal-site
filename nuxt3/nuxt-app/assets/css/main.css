@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body {
-  background: #ffc0cb;
+  transition: background-color 5s ease;
+}
+
+body.pink-mode {
+  transition: background-color 1s ease;
+  background-color: #ffc0cb99;
 }
 
 .container {
@@ -32,8 +37,11 @@ body {
     max-width: 70%;
     height: auto;
     transition: max-width .2s ease-out .2s, height .2s ease-out .2s;
-    filter: grayscale(100%);
   }
+}
+
+.img-grayscale {
+  filter: grayscale(100%);
 }
 
 .portfolio-label {
@@ -68,7 +76,6 @@ body {
 
 .flicker-slow {
   animation: flicker 5s linear infinite;
-  /* text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA; */
 }
 
 .main-logo-fx {
@@ -101,10 +108,6 @@ body {
 
 .quick {
  animation-duration: 1s;
-}
-
-.shadow {
-  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA;
 }
 
 @keyframes flicker {

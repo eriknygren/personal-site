@@ -54,7 +54,11 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 w-full">
         <div v-for="(entry, index) in portfolio" :key="`entry-${index}`">
-          <portfolio-card class="flex-grow" :article="entry" />
+          <portfolio-card
+            class="flex-grow"
+            :article="entry"
+            :grayscale="true"
+          />
         </div>
       </div>
     </div>
@@ -62,6 +66,12 @@
 </template>
 <script setup>
 import { letters } from '@/constants/ascii_art'
+
+useMeta({
+  bodyAttrs: {
+    class: 'pink-mode',
+  },
+})
 
 const portfolio = ref(
   await queryContent('portfolio').sort({ importance: -1 }).find()
