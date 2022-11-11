@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  transition: background-color 5s ease;
+  transition: background-color 6s ease;
 }
 
 body.pink-mode {
   transition: background-color 1s ease;
-  background-color: #ffc0cb99;
+  background-color: #ffc0cbB3;
 }
 
 .container {

@@ -27,6 +27,7 @@
     "@nuxtjs/tailwindcss": "^6.1.3",
     "@tailwindcss/typography": "^0.5.8",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-unicorn": "^44.0.2"
+    "eslint-plugin-unicorn": "^44.0.2",
+    "sitemap": "^7.1.1"
   }
 }

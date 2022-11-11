@@ -5,4 +5,9 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
   },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
 })
