@@ -83,7 +83,6 @@ body.pink-mode {
   cursor: pointer;
   display: inline-block;
   animation: spin 4s linear infinite;
-  animation-direction: reverse;
   margin: 0 auto;
   opacity: 1;
   transition: opacity 1s;
@@ -103,7 +102,7 @@ body.pink-mode {
 }
 
 .rewind {
-  animation-direction: normal;
+  animation-direction: reverse;
 }
 
 .quick {
@@ -121,6 +120,6 @@ body.pink-mode {
 
 @keyframes spin {
   100% {
-    transform:rotate(360deg);
+    transform:rotate(-360deg);
   }
 }
