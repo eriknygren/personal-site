@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  transition: background-color 6s ease;
+}
+
+body.pink-mode {
+  transition: background-color 1s ease;
+  background-color: #ffc0cbB3;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.content-article {
+  h1, a {
+    text-decoration: none;
+  }
+}
+
+.portfolio-image-wrapper {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img {
+    align-self: center;
+    max-width: 70%;
+    height: auto;
+    transition: max-width .2s ease-out .2s, height .2s ease-out .2s;
+  }
+}
+
+.img-grayscale {
+  filter: grayscale(100%);
+}
+
+.portfolio-label {
+  text-decoration: none;
+}
+
+.portfolio-card:hover {
+  .portfolio-image-wrapper > .img {
+    max-width: 75%;
+  }
+  .portfolio-label {
+    text-decoration: underline;
+  }
+}
+
+.article {
+  max-width: 60rem;
+  text-align: left;
+}
+
+.article-nav {
+  height: 100vh;
+  width: 18rem;
+  position: fixed;
+  top: 0;
+  left:0;
+  display: none;
+  @media (min-width: 1020px) {
+    display: block;
+  }
+}
+
+.flicker-slow {
+  animation: flicker 5s linear infinite;
+}
+
+.main-logo-fx {
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  animation: spin 4s linear infinite;
+  animation-direction: reverse;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.main-logo-fx:active {
+  opacity: 0;
+  transition: none;
+}
+
+.sine {
+  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96)
+}
+.forward {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-duration: 8s;
+}
+
+.rewind {
+  animation-direction: normal;
+}
+
+.quick {
+ animation-duration: 1s;
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70% {
+    opacity: .99;
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
