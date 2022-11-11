@@ -18,6 +18,9 @@ body.pink-mode {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  @media(max-width: 768px) {
+    padding: 0 .75rem;
+  }
 }
 
 .content-article {
