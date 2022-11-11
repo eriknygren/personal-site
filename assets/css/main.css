@@ -69,7 +69,7 @@ body.pink-mode {
   top: 0;
   left:0;
   display: none;
-  @media (min-width: 1380px) {
+  @media (min-width: 1420px) {
     display: block;
   }
 }

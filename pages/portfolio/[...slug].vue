@@ -55,6 +55,7 @@
   </div>
 </template>
 <script setup>
+const config = useRuntimeConfig()
 const { page: article, toc } = reactive(useContent())
 const portfolioArticles = reactive(
   await queryContent('portfolio').sort({ importance: -1 }).limit(3).find()
@@ -65,5 +66,32 @@ const relatedArticles = computed(() => {
   if (!portfolioArticles) return []
 
   return portfolioArticles.filter((a) => a._path !== article._path)
+})
+const title = `Portfolio: ${article.title}`
+const description = `Erik's portfolio, working on ${article.description}`
+useHead({
+  title,
+  meta: [
+    {
+      hid: 'og:title',
+      property: 'og:title',
+      content: title,
+    },
+    {
+      hid: 'description',
+      name: 'description',
+      content: description,
+    },
+    {
+      hid: 'og:description',
+      property: 'og:description',
+      content: description,
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: `${config.baseURL}/logos/${article.img}`,
+    },
+  ],
 })
 </script>
