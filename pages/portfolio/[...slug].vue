@@ -55,6 +55,7 @@
   </div>
 </template>
 <script setup>
+const nuxtApp = useNuxtApp()
 const config = useRuntimeConfig()
 const { page: article, toc } = reactive(useContent())
 const portfolioArticles = reactive(
@@ -94,4 +95,7 @@ useHead({
     },
   ],
 })
+ nuxtApp.hook("page:finish", () => {
+   window.scrollTo(0, 0)
+ })
 </script>
