@@ -1,42 +1,23 @@
-# Content v2 Minimal Starter
+# erik-personal-site
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+[personal site](https://eriknygren.dev)
 
-## Setup
-
-Make sure to install the dependencies:
+## Build Setup
 
 ```bash
-# yarn
-yarn install
+# install dependencies
+$ yarn install
 
-# npm
-npm install
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-# pnpm
-pnpm install --shamefully-hoist
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
 ```
 
-## Development Server
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
