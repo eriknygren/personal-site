@@ -67,7 +67,7 @@
 <script setup>
 import { letters } from '@/constants/ascii_art'
 
-useMeta({
+useHead({
   bodyAttrs: {
     class: 'pink-mode',
   },
