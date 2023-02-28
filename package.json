@@ -28,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.8",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-unicorn": "^44.0.2",
-    "sitemap": "^7.1.1"
+    "sitemap": "^7.1.1",
+    "vue-gtag-next": "^1.14.0"
   }
 }
