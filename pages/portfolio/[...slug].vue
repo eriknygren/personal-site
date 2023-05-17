@@ -54,12 +54,15 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 const nuxtApp = useNuxtApp()
 const config = useRuntimeConfig()
 const { page: article, toc } = reactive(useContent())
 const portfolioArticles = reactive(
-  await queryContent('portfolio').sort({ importance: -1 }).limit(3).find()
+  await queryContent<PortfolioArticle>('portfolio')
+    .sort({ importance: -1 })
+    .limit(3)
+    .find()
 )
 
 const relatedArticles = computed(() => {
@@ -95,7 +98,7 @@ useHead({
     },
   ],
 })
- nuxtApp.hook("page:finish", () => {
-   window.scrollTo(0, 0)
- })
+nuxtApp.hook('page:finish', () => {
+  window.scrollTo(0, 0)
+})
 </script>

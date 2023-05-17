@@ -15,8 +15,8 @@
   </div>
 </template>
 <script setup lang="ts">
-defineProps({
-  article: { type: Object, required: true },
-  grayscale: { type: Boolean, default: false },
-})
+defineProps<{
+  article: PortfolioArticle
+  grayscale?: boolean
+}>()
 </script>
