@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     enabled: process.env.NODE_ENV === 'production',
     property: {
       id: 'G-363DMVGGTX',
-    }
+    },
   })
   trackRouter(useRouter())
 })

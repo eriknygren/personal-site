@@ -64,7 +64,7 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import { letters } from '@/constants/ascii_art'
 
 useHead({
@@ -74,7 +74,9 @@ useHead({
 })
 
 const portfolio = ref(
-  await queryContent('portfolio').sort({ importance: -1 }).find()
+  await queryContent<PortfolioArticle>('portfolio')
+    .sort({ importance: -1 })
+    .find()
 )
 
 const extraEffects = ['sine', 'forward', 'quick', 'rewind', '']
