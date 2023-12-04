@@ -26,7 +26,6 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  ssr: !process.env.BASE_URL,
   content: {
     documentDriven: true,
     markdown: {
