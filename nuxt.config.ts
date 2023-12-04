@@ -28,6 +28,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   content: {
+    navigation: false,
     documentDriven: true,
   },
   nitro: {
