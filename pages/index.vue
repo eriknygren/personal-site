@@ -73,11 +73,11 @@ useHead({
   },
 })
 
-const portfolio = ref(
-  await queryContent<PortfolioArticle>('portfolio')
+const { data: portfolio } = await useAsyncData('portfolio', () => {
+  return queryContent<PortfolioArticle>('portfolio')
     .sort({ importance: -1 })
     .find()
-)
+})
 
 const extraEffects = ['sine', 'forward', 'quick', 'rewind', '']
 

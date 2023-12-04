@@ -26,10 +26,12 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  ssr: false,
+  ssr: !process.env.BASE_URL,
   content: {
-    navigation: false,
     documentDriven: true,
+    markdown: {
+      anchorLinks: true,
+    },
   },
   nitro: {
     prerender: {
