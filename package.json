@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
-    "generate": "nuxi generate",
+    "generate": "nuxi build",
     "preview": "nuxi preview",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "typecheck": "nuxi typecheck"
