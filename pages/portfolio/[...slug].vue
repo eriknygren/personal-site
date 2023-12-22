@@ -1,5 +1,6 @@
 <template>
   <div>
+    <article-nav :toc="toc" />
     <div class="article-nav pl-4 pt-4">
       <div>
         <NuxtLink class="font-semibold hover:underline" to="/">

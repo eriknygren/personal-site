@@ -31,6 +31,10 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: true,
     },
+    highlight: {
+      // Theme used in all color schemes.
+      theme: 'github-dark'
+    },
   },
   nitro: {
     prerender: {
