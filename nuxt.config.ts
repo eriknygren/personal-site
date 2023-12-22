@@ -44,8 +44,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  alias: {
-    'micromark/lib/preprocess.js': 'micromark',
-    'micromark/lib/postprocess.js': 'micromark',
-  },
 })
