@@ -25,8 +25,8 @@
 <script setup lang="ts">
 const nuxtApp = useNuxtApp()
 const { page: article, toc } = useContent()
-const title = `Post: ${article.value.title}`
-const description = `Erik's posts, working on ${article.value.description}`
+const title = article.value.title
+const description = article.value.description
 useHead({
   title,
   meta: [

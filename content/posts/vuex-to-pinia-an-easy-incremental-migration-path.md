@@ -1,7 +1,6 @@
 ---
-title: Vuex to Pinia: An easy incremental migration path
+title: "Vuex to Pinia: An easy incremental migration path"
 description: "An article with code examples explaining how you can incrementally migrate from Vuex to Pinia"
-img: captionhub.svg
 alt: x
 importance: 500
 ---
