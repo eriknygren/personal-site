@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       baseURL: process.env.BASE_URL || 'localhost:3000',
-    }
+    },
   },
   app: {
     head: {
@@ -28,10 +28,20 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
+    markdown: {
+      anchorLinks: true,
+    },
   },
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
+    },
+  },
+  postcss: {
+    plugins: {
+      'tailwindcss/nesting': {},
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
 })
