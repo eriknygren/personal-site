@@ -35,10 +35,12 @@
         </NuxtLink>
       </div>
       <div class="md:col-span-1 w-full flex flex-col px-2 justify-end">
-        <div
-          class="text-left md:text-right flex flex-col-reverse sm:block pt-4 pb-4 md:pt-0 md:pb-0"
-        >
-          <div class="text-right pt-2 sm:pb-2 sm:pt-0">
+        <div class="text-left md:text-right block pt-4 pb-4 md:pt-0 md:pb-0">
+          <div>
+            <span class="select-none font-semibold">contact: </span>
+            <code>hello@eriknygren.dev</code>
+          </div>
+          <div class="text-right pt-2 pb-2">
             <a
               href="https://github.com/eriknygren"
               target="_blank"
@@ -50,10 +52,6 @@
                 alt="Github"
               />
             </a>
-          </div>
-          <div>
-            <span class="select-none font-semibold">contact: </span>
-            <code>hello@eriknygren.dev</code>
           </div>
         </div>
       </div>
