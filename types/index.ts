@@ -7,4 +7,8 @@ declare global {
     description: string
     img: string
   }
+  interface PortfolioPost extends MarkdownParsedContent {
+    title: string
+    description: string
+  }
 }

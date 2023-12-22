@@ -24,9 +24,21 @@
           </pre>
         </div>
       </div>
-      <div class="md:col-span-3 w-full flex flex-col px-2 justify-end">
-        <div class="text-left md:text-right pt-4 pb-4 md:pt-0 md:pb-0">
-          <div class="text-right pb-2">
+      <div class="md:col-span-2 px-2 flex flex-col text-left">
+        <span class="font-semibold select-none">LATEST TXT:</span>
+        <NuxtLink
+          v-if="latestPost"
+          class="hover:underline italic"
+          :to="latestPost._path"
+        >
+          {{ latestPost.title }}
+        </NuxtLink>
+      </div>
+      <div class="md:col-span-1 w-full flex flex-col px-2 justify-end">
+        <div
+          class="text-left md:text-right flex flex-col-reverse sm:block pt-4 pb-4 md:pt-0 md:pb-0"
+        >
+          <div class="text-right pt-2 sm:pb-2 sm:pt-0">
             <a
               href="https://github.com/eriknygren"
               target="_blank"
@@ -39,8 +51,10 @@
               />
             </a>
           </div>
-          <span class="select-none font-semibold">contact: </span>
-          <code>hello@eriknygren.dev</code>
+          <div>
+            <span class="select-none font-semibold">contact: </span>
+            <code>hello@eriknygren.dev</code>
+          </div>
         </div>
       </div>
     </div>
@@ -77,6 +91,15 @@ const { data: portfolio } = await useAsyncData('portfolio', () => {
   return queryContent<PortfolioArticle>('portfolio')
     .sort({ importance: -1 })
     .find()
+})
+
+const { data: latestPosts } = await useAsyncData('latest-post', () => {
+  return queryContent<PortfolioPost>('posts').limit(1).find()
+})
+
+const latestPost = computed(() => {
+  if (!latestPosts.value || !Array.isArray(latestPosts.value)) return null
+  return latestPosts.value[0]
 })
 
 const extraEffects = ['sine', 'forward', 'quick', 'rewind', '']
