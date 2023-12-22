@@ -1,5 +1,6 @@
 <template>
   <div>
+    <article-nav :toc="toc" />
     <div class="article-nav pl-4 pt-4">
       <div>
         <NuxtLink class="font-semibold hover:underline" to="/">
@@ -96,7 +97,7 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: `${config.baseURL}/logos/${article.value.img}`,
+      content: `${config.public.baseURL}/logos/${article.value.img}`,
     },
   ],
 })

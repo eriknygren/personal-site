@@ -64,7 +64,11 @@ body.pink-mode {
 .article {
   max-width: 60rem;
   text-align: left;
-  padding: 0 .5rem;
+  padding: 0 1rem;
+
+  @media (max-width: 1419px) {
+    max-width: 100vw;
+  }
 }
 
 .article-nav {

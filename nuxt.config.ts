@@ -22,6 +22,11 @@ export default defineNuxtConfig({
           content:
             'Portfolio site for Erik Nygren, a web developer based in London, UK',
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '/logos/erikportfolio.jpg',
+        },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
@@ -30,6 +35,9 @@ export default defineNuxtConfig({
     documentDriven: true,
     markdown: {
       anchorLinks: true,
+    },
+    highlight: {
+      theme: 'github-dark',
     },
   },
   nitro: {
