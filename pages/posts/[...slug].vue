@@ -13,6 +13,12 @@
         >
           <ContentRenderer :value="article" />
         </article>
+        <div class="pt-4 text-center">
+          <span class="select-none italic">
+            Any questions/comments/suggestions? Feel free to get in touch via:
+          </span>
+          <code class="font-semibold">hello@eriknygren.dev</code>
+        </div>
         <div class="pt-4">
           <NuxtLink class="font-semibold hover:underline" to="/">
             &lt;&lt; Back
