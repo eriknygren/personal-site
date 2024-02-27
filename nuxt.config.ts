@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       baseURL: process.env.BASE_URL || 'localhost:3000',
     },
   },
+  experimental: { appManifest: false },
   app: {
     head: {
       title: 'Erik Nygren: software developer - portfolio site',
@@ -43,6 +44,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
+      autoSubfolderIndex: false,
     },
   },
   postcss: {
