@@ -32,5 +32,8 @@
     "eslint-plugin-unicorn": "^49.0.0",
     "sitemap": "^7.1.1",
     "vue-gtag-next": "^1.14.0"
+  },
+  "engines": {
+    "yarn": "1.22.21"
   }
 }
