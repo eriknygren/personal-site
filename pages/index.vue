@@ -33,6 +33,9 @@
         >
           {{ latestPost.title }}
         </NuxtLink>
+        <NuxtLink to="/posts" class="hover:underline italic font-semibold pt-1">
+          all txts &gt;&gt;
+        </NuxtLink>
       </div>
       <div class="md:col-span-1 w-full flex flex-col px-2 justify-end">
         <div class="text-left md:text-right block pt-4 pb-4 md:pt-0 md:pb-0">
@@ -87,12 +90,15 @@ useHead({
 
 const { data: portfolio } = await useAsyncData('portfolio', () => {
   return queryContent<PortfolioArticle>('portfolio')
-    .sort({ importance: -1 })
+    .sort({ importance: -1, $numeric: true })
     .find()
 })
 
 const { data: latestPosts } = await useAsyncData('latest-post', () => {
-  return queryContent<PortfolioPost>('posts').limit(1).find()
+  return queryContent<PortfolioPost>('posts')
+    .sort({ timestamp: -1, $numeric: true })
+    .limit(1)
+    .find()
 })
 
 const latestPost = computed(() => {

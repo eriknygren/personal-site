@@ -20,6 +20,11 @@
         }}</NuxtLink>
       </li>
     </ul>
+    <div>
+      <NuxtLink class="font-semibold hover:underline" to="/posts">
+        More posts &gt;&gt;
+      </NuxtLink>
+    </div>
   </div>
 </template>
 <script setup lang="ts">

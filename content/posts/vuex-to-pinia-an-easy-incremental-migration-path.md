@@ -3,6 +3,8 @@ title: "Vuex to Pinia: An easy incremental migration path"
 description: "An article with code examples explaining how you can incrementally migrate from Vuex to Pinia"
 alt: x
 importance: 500
+timestamp: 1703341523
+date: '2023-12-22'
 ---
 
 # Vuex to Pinia: An easy incremental migration path
