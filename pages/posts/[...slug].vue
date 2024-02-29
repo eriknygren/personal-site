@@ -19,9 +19,15 @@
           </span>
           <code class="font-semibold">hello@eriknygren.dev</code>
         </div>
-        <div class="pt-4">
-          <NuxtLink class="font-semibold hover:underline" to="/">
+        <div class="pt-4 flex">
+          <NuxtLink class="font-semibold hover:underline flex-1" to="/">
             &lt;&lt; Back
+          </NuxtLink>
+          <NuxtLink
+            class="font-semibold hover:underline flex-1 text-right"
+            to="/posts"
+          >
+            More posts &gt;&gt;
           </NuxtLink>
         </div>
       </article>

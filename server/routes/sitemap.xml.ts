@@ -4,8 +4,9 @@ import { serverQueryContent } from '#content/server'
 export default defineEventHandler(async (event) => {
   // Fetch all documents
   const docs = await serverQueryContent(event).find()
+  const url = process.env.BASE_URL || 'http://localhost:3000'
   const sitemap = new SitemapStream({
-    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    hostname: url,
   })
 
   for (const doc of docs) {
@@ -14,6 +15,10 @@ export default defineEventHandler(async (event) => {
       changefreq: 'monthly',
     })
   }
+  sitemap.write({
+    url: `${url}/posts`,
+    changefreq: 'monthly',
+  })
   sitemap.end()
 
   return streamToPromise(sitemap)
