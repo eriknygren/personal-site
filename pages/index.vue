@@ -90,12 +90,14 @@ useHead({
 
 const { data: portfolio } = await useAsyncData('portfolio', () => {
   return queryContent<PortfolioArticle>('portfolio')
+    .where({ hidden: { $ne: true } })
     .sort({ importance: -1, $numeric: true })
     .find()
 })
 
 const { data: latestPosts } = await useAsyncData('latest-post', () => {
   return queryContent<PortfolioPost>('posts')
+    .where({ hidden: { $ne: true } })
     .sort({ timestamp: -1, $numeric: true })
     .limit(1)
     .find()

@@ -22,7 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 useHead({
   bodyAttrs: {
@@ -30,5 +30,9 @@ useHead({
   },
 })
 
-const query: QueryBuilderParams= { path: '/posts', sort: [{ timestamp: -1, $numeric: true }] }
+const query: QueryBuilderParams = {
+  path: '/posts',
+  where: [{ hidden: { $ne: true } }],
+  sort: [{ timestamp: -1, $numeric: true }],
+}
 </script>
