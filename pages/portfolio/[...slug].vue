@@ -29,7 +29,7 @@
           </NuxtLink>
         </div>
         <article
-          class="content-article prose sm:prose lg:prose-lg xl:prose-2xl"
+          class="content-article prose sm:prose lg:prose-base xl:prose-xl"
         >
           <ContentRenderer :value="article" />
         </article>

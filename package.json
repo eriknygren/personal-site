@@ -34,7 +34,7 @@
     "vue-gtag-next": "^1.14.0"
   },
   "engines": {
-    "yarn": "1.22.21"
+    "yarn": "1.22.22"
   },
-  "packageManager": "yarn@1.22.21"
+  "packageManager": "yarn@1.22.22"
 }
